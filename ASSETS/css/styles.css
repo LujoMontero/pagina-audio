@@ -1,0 +1,156 @@
+/* =====================
+   HERO SECTION
+   ===================== */
+
+.hero-section {
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.92) 45%, rgba(0, 0, 0, 0.55) 70%),
+        url('/proyecto1/ASSETS/img/fondo.png') center / cover no-repeat;
+    min-height: 340px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.hero-section h1 {
+    color: white;
+    font-size: 72px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.hero-section h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 8px 0 0 0;
+    letter-spacing: 0.5px;
+}
+
+.hero-linea {
+    width: 48px;
+    height: 2px;
+    background-color: #b8953f;
+    margin: 14px 0;
+}
+
+.hero-section .col:first-child p {
+    color: #cccccc;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+/* =====================
+   BOTONES
+   ===================== */
+
+.botones {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.btn-gold {
+    background-color: #b8953f;
+    color: #000000;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.btn-whatsapp {
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 24px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+}
+
+.btn-whatsapp i {
+    color: white;
+    font-size: 17px;
+}
+
+.btn-gold:hover {
+    background-color: #a07c30;
+}
+
+.btn-whatsapp:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* =====================
+   COLUMNA DE SERVICIOS
+   ===================== */
+
+.col-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+}
+
+.col-servicios p {
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-transform: uppercase;
+}
+
+.col-servicios i {
+    color: #b8953f;
+    font-size: 18px;
+    width: 22px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+/* =====================
+   FLECHA INFERIOR
+   ===================== */
+
+.chevron-down {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 20px;
+}
+
+/* =====================
+   Z-INDEX FILA
+   ===================== */
+
+.hero-section .row {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
