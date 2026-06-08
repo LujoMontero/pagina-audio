@@ -1,11 +1,36 @@
-/* =====================
-   HERO SECTION
-   ===================== */
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.imagen_logo {
+    width: 225px;
+    height: 85px;
+}
+
+.icono {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
 
 .hero-section {
     background:
-        linear-gradient(to right, rgba(0, 0, 0, 0.92) 45%, rgba(0, 0, 0, 0.55) 70%),
-        url('/proyecto1/ASSETS/img/fondo.png') center / cover no-repeat;
+        linear-gradient(to right, rgba(0, 0, 0, 0.92) 45%, rgba(0, 0, 0, 0.55) 100%),
+        url('TU-FOTO.jpg') center / cover no-repeat;
     min-height: 340px;
     position: relative;
     display: flex;
@@ -45,9 +70,11 @@
     margin-bottom: 0;
 }
 
-/* =====================
-   BOTONES
-   ===================== */
+.hero-section .row {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
 
 .botones {
     display: flex;
@@ -68,6 +95,10 @@
     letter-spacing: 1.5px;
     border-radius: 0;
     text-transform: uppercase;
+}
+
+.btn-gold:hover {
+    background-color: #a07c30;
 }
 
 .btn-whatsapp {
@@ -91,17 +122,9 @@
     font-size: 17px;
 }
 
-.btn-gold:hover {
-    background-color: #a07c30;
-}
-
 .btn-whatsapp:hover {
     background-color: rgba(255, 255, 255, 0.08);
 }
-
-/* =====================
-   COLUMNA DE SERVICIOS
-   ===================== */
 
 .col-servicios {
     display: flex;
@@ -132,9 +155,6 @@
     flex-shrink: 0;
 }
 
-/* =====================
-   FLECHA INFERIOR
-   ===================== */
 
 .chevron-down {
     position: absolute;
@@ -145,12 +165,237 @@
     font-size: 20px;
 }
 
+.seccion-nosotros {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sobre-nosotros-title {
+    color: #947a07;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.hero-headline {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: #FFFFFF;
+}
+
+.card-text {
+    color: #d1d1d1;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+#btn-conocer-mas {
+    border-color: #947a07;
+    color: #947a07;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+#btn-conocer-mas:hover {
+    background-color: #947a07;
+    border-color: #947a07;
+    color: #ffffff;
+}
+
+.col-image-full img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.img-hero {
+    width: 1200px;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
 /* =====================
-   Z-INDEX FILA
+   SECCIÓN PORTAFOLIO
    ===================== */
 
-.hero-section .row {
+.portafolio-section {
+    background-color: #0d0d0d;
+    padding: 60px 0;
+}
+
+.portafolio-label {
+    color: #c9a84c;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.portafolio-titulo {
+    color: #c9a84c;
+    margin-bottom: 8px;
+}
+
+.title-line {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #c9a84c;
+    margin: 0 auto 40px auto;
+}
+
+.portafolio-card {
     position: relative;
-    z-index: 1;
+    overflow: hidden;
+}
+
+.portafolio-card img {
     width: 100%;
+    height: 220px;        
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+
+.portafolio-card-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 20px 12px 10px;
+}
+
+.portafolio-card-label h5 {
+    margin: 0;
+    color: #fff;
+}
+
+/* =====================
+   SECCIÓN FOOTER
+   ===================== */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 18px 40px;
+    gap: 24px;
+    border-top: 1px solid #1a1a1a;
+}
+
+
+.footer-contacto-label {
+    color: olive;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.footer-titulo {
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+}
+
+.footer-sub {
+    color: #888;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+.contenedor-botones {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botones-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: white;
+    background-color: #000;
+    padding: 10px 18px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.botones-footer:hover {
+    border-color: #b8953f;
+    color: #b8953f;
+}
+
+.botones-footer i {
+    font-size: 14px;
+}
+
+.footer-onda {
+    display: flex;
+    align-items: center;
+}
+
+.footer-onda img {
+    width: 120px;
+    opacity: 0.85;
+    filter: brightness(1.2);
+}
+
+
+.footer-copyright {
+    background-color: #000;
+    text-align: center;
+    color: #555;
+    font-size: 11px;
+    padding: 10px 0;
+    border-top: 1px solid #111;
+}
+
+@media (max-width: 991px) {
+    .seccion-nosotros {
+        flex-direction: column;
+        padding: 5rem 1rem;
+    }
+
+    .hero-headline {
+        font-size: 2.2rem;
+    }
+
+    .col-image-full {
+        position: static;
+        width: 100%;
+        height: 300px;
+        margin-top: 3rem;
+    }
 }

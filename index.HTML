@@ -11,6 +11,11 @@
     />
     <link rel="stylesheet" href="/proyecto1/ASSETS/css/styles.css" />
     <link
+      rel="icon"
+      type="image/jpeg"
+      href="/proyecto1/ASSETS/img/logopagina.jpeg"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
@@ -18,44 +23,236 @@
   </head>
 
   <body>
-    <div class="container-fluid px-5 hero-section">
-      <div class="row gx-5">
-        <!-- COLUMNA IZQUIERDA -->
-        <div class="col">
-          <h1>IMPULSO</h1>
-          <h2>PRODUCCIONES OFICIAL</h2>
-          <div class="hero-linea"></div>
-          <p>Creamos contenido que conecta,<br />emociona y vende.</p>
-          <div class="botones">
-            <button class="btn-gold" href="servicios.html">
-              VER SERVICIOS
-            </button>
-            <button class="btn-whatsapp">
-              <i class="fa-brands fa-whatsapp"></i> CONTACTAR POR WHATSAPP
-            </button>
+    <div class="navbar_proyecto ">
+      <nav
+        class="navbar navbar-expand border-bottom border-body"
+        data-bs-theme="dark"
+        style="background-color: #000"
+      >
+        <div class="container-fluid">
+          <div>
+            <img
+              class="imagen_logo"
+              src="/proyecto1/ASSETS/img/logoinicio.png"
+              alt="Logo de la empresa"
+            />
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="mx-auto">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item mb-3">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item me-3 ms-3">
+                  <a class="nav-link" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="#">Portafolio</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="icono">
+            <i class="fa-brands fa-instagram" style="font-size: 2rem"></i>
+            <i class="fa-brands fa-youtube" style="font-size: 2rem"></i>
+            <i class="fa-brands fa-whatsapp" style="font-size: 2rem"></i>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid px-5 hero-section">
+        <div class="row gx-5">
+          <div class="col">
+            <h1>IMPULSO</h1>
+            <h2>PRODUCCIONES OFICIAL</h2>
+            <div class="hero-linea"></div>
+            <p>Creamos contenido que conecta,<br />emociona y vende.</p>
+            <div class="botones">
+              <button class="btn-gold">VER SERVICIOS</button>
+              <button class="btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> CONTACTAR POR WHATSAPP
+              </button>
+            </div>
+          </div>
+
+          <div class="col col-servicios">
+            <p><i class="fa-solid fa-music"></i> MUSICALIZACIÓN</p>
+            <p><i class="fa-solid fa-video"></i> PRODUCCIÓN AUDIOVISUAL</p>
+            <p><i class="fa-solid fa-pen-nib"></i> DISEÑO GRÁFICO</p>
+            <p><i class="fa-solid fa-chart-line"></i> MARKETING DIGITAL</p>
           </div>
         </div>
 
-        <div class="col d-none d-lg-block ">
-            <div class="col-servicios">
-          <p><i class="fa-solid fa-music"></i> MUSICALIZACIÓN</p>
-          <p><i class="fa-solid fa-video"></i> PRODUCCIÓN AUDIOVISUAL</p>
-          <p><i class="fa-solid fa-pen-nib"></i> DISEÑO GRÁFICO</p>
-          <p><i class="fa-solid fa-chart-line"></i> MARKETING DIGITAL</p>
-        </div>
-      </div>
+        <i class="fa-solid fa-chevron-down chevron-down"></i>
       </div>
 
-      <!-- FLECHA ABAJO -->
-      <i class="fa-solid fa-chevron-down chevron-down"></i>
+      <section class="seccion-nosotros container-fluid">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-lg-6 col-md-12 p-lg-5 p-4 z-1">
+              <span class="sobre-nosotros-title">Sobre Nosotros</span>
+              <h1 class="hero-headline text-uppercase">
+                Pasión, Creatividad <br />y Compromiso
+              </h1>
+              <p class="card-text">
+                Somos una productora creativa dedicada a entregar soluciones
+                integrales en música, audiovisual, diseño y marketing digital.
+                Ayudamos a marcas, artistas y emprendedores a impulsar su
+                mensaje y alcanzar sus objetivos.
+              </p>
+              <a href="#" id="btn-conocer-mas" class="btn btn-outline-dark"
+                >Conocer Más</a
+              >
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-image-full">
+              <img
+                src="/proyecto1/ASSETS/img/ChatGPT Image 7 jun 2026, 09_38_55 p.m..png"
+                alt="Estudio de producción"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
+<section class="portafolio-section">
+  <div class="container">
 
+    <div class="text-center mb-5">
+      <span class="portafolio-label">Portafolio</span>
+      <h1 class="portafolio-titulo">Nuestros Trabajos</h1>
+      <span class="title-line"></span>
+    </div>
 
+    <div class="row g-3 g-md-4 row-cols-2 row-cols-sm-3 row-cols-lg-6">
 
+      <div class="col">
+        <div class="card h-100 text-white bg-dark border-secondary">
+          <div class="portafolio-card">
+            <img src="/proyecto1/ASSETS/img/logodiseno.png" alt="Logo Diseño" />
+            <div class="portafolio-card-label">
+              <h5>Logo<br />Diseño</h5>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="col">
+        <div class="card h-100 text-white bg-dark border-secondary">
+          <div class="portafolio-card">
+            <img src="/proyecto1/ASSETS/img/video.png" alt="Video Promocional" />
+            <div class="portafolio-card-label">
+              <h5>Video<br />Promocional</h5>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="col">
+        <div class="card h-100 text-white bg-dark border-secondary">
+          <div class="portafolio-card">
+            <img src="/proyecto1/ASSETS/img/musicalizacion.png" alt="Musicalización" />
+            <div class="portafolio-card-label">
+              <h5>Musicalización</h5>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="col">
+        <div class="card h-100 text-white bg-dark border-secondary">
+          <div class="portafolio-card">
+            <img src="/proyecto1/ASSETS/img/reels.png" alt="Reels" />
+            <div class="portafolio-card-label">
+              <h5>Reels</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 text-white bg-dark border-secondary">
+          <div class="portafolio-card">
+            <img src="/proyecto1/ASSETS/img/Flyers.png" alt="Flyers" />
+            <div class="portafolio-card-label">
+              <h5>Flyers</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100 text-white bg-dark border-secondary">
+          <div class="portafolio-card">
+            <img src="/proyecto1/ASSETS/img/produccion.png" alt="Producción" />
+            <div class="portafolio-card-label">
+              <h5>Producción</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <footer>
+      <div class="footer-texto">
+        <span class="footer-contacto-label">CONTACTO</span>
+        <h2 class="footer-titulo">HABLEMOS DE TU PROYECTO</h2>
+        <p class="footer-sub">
+          Estamos listos para ayudarte a impulsar tu marca.
+        </p>
+      </div>
+
+      <div class="contenedor-botones">
+        <button class="botones-footer">
+          <i class="fa-brands fa-whatsapp"></i> WHATSAPP
+        </button>
+        <button class="botones-footer">
+          <i class="fa-brands fa-instagram"></i> INSTAGRAM
+        </button>
+        <button class="botones-footer">
+          <i class="fa-solid fa-envelope"></i> CORREO
+        </button>
+        <button class="botones-footer">
+          <i class="fa-solid fa-location-dot"></i> CHILE
+        </button>
+      </div>
+
+      <div class="footer-onda">
+        <img src="/proyecto1/ASSETS/img/logo.png" alt="Onda" />
+      </div>
+    </footer>
+
+    <div class="footer-copyright">
+      © 2026 Impulso Producciones Oficial. Todos los derechos reservados.
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
