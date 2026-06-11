@@ -25,7 +25,60 @@
     />
 
     <title>Impulso Producciones</title>
-  </head>
+    <style>
+      .seccion3 .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .seccion3 .card-body {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      .seccion3 .card-body ul {
+        margin-top: auto;
+        padding-left: 1.2rem;
+      }
+      .seccion3 .card-body ul li {
+        margin-bottom: 0.25rem;
+      }
+      .seccion3 .bi {
+        font-size: 2.5rem;
+        text-align: center;
+        display: block;
+        padding-top: 1.5rem;
+        padding-bottom: 0.5rem;
+      }
+      .seccion3 .card-title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+      .seccion3 .card-text {
+        text-align: center;
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+      .seccion3_texto {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .seccion3_texto .Servicios3 {
+        color: #c9a227;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+      }
+      .seccion3_texto h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+      }
+    </style>
+  <base target="_blank">
+</head>
 
   <body>
     <div class="navbar_proyecto">
@@ -34,7 +87,7 @@
         data-bs-theme="dark"
         style="background-color: #000"
       >
-        <div class="container-fluid">
+        <div class="container-fluid px-3 px-lg-5">
           <div>
             <img
               class="imagen_logo"
@@ -91,8 +144,8 @@
       </nav>
 
       <div class="container-fluid px-3 px-lg-5 hero-section">
-        <div class="row gx-3 align-items-center">
-          <div class="col-lg-6 col-md-12">
+        <div class="row gx-3 gx-lg-5 align-items-center">
+          <div class="col-lg-6">
             <h1>IMPULSO</h1>
             <h2>PRODUCCIONES OFICIAL</h2>
             <div class="hero-linea"></div>
@@ -105,7 +158,7 @@
             </div>
           </div>
 
-          <div class="col-lg-6 col-md-12 col-servicios">
+          <div class="col-lg-6 col-servicios">
             <p><i class="fa-solid fa-music"></i> MUSICALIZACIÓN</p>
             <p><i class="fa-solid fa-video"></i> PRODUCCIÓN AUDIOVISUAL</p>
             <p><i class="fa-solid fa-pen-nib"></i> DISEÑO GRÁFICO</p>
@@ -116,10 +169,10 @@
         <i class="fa-solid fa-chevron-down chevron-down"></i>
       </div>
 
-      <section class="seccion-nosotros container-fluid">
-        <div class="container h-100">
-          <div class="row h-100 align-items-center">
-            <div class="col-lg-6 col-md-12 p-lg-5 p-4 z-1">
+      <section class="seccion-nosotros">
+        <div class="container-fluid px-3 px-lg-5">
+          <div class="row gx-3 gx-lg-5 align-items-center">
+            <div class="col-lg-6 py-4 py-lg-5 z-1">
               <span class="sobre-nosotros-title">Sobre Nosotros</span>
               <h1 class="hero-headline text-uppercase">
                 Pasión, Creatividad <br />y Compromiso
@@ -135,7 +188,7 @@
               >
             </div>
 
-            <div class="col-lg-6 col-md-12 col-image-full">
+            <div class="col-lg-6 col-image-full">
               <img
                 src="ASSETS/img/ChatGPT Image 7 jun 2026, 09_38_55 p.m..png"
                 alt="Estudio de producción"
@@ -145,95 +198,106 @@
         </div>
       </section>
     </div>
+
     <div class="seccion3">
-      <div class="seccion3_texto">
-        <p class="Servicios3">Servicios</p>
-        <h2>¿Que hacemos?</h2>
-      </div>
-      <div class="seccion3_card">
-        <div class="card-group">
-          <div class="card text-bg-dark mb-3" style="max-width: 18rem">
-            <i class="bi bi-music-note-beamed"></i>
-            <div class="card-body">
-              <h3 class="card-title">musicalización</h3>
-              <p class="card-text">
-                Creamos experiencias musicales personalizadas para cada ocasión
-              </p>
-              <ul>
-                <li>Cumpleaños</li>
-                <li>Empresas</li>
-                <li>Emprendimientos</li>
-                <li>Bodas</li>
-                <li>Contenido para redes</li>
-              </ul>
+      <div class="container-fluid px-3 px-lg-5">
+        <div class="seccion3_texto">
+          <p class="Servicios3">Servicios</p>
+          <h2>¿Que hacemos?</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 g-4 align-items-stretch">
+          <div class="col d-flex">
+            <div class="card text-bg-dark w-100">
+              <i class="bi bi-music-note-beamed"></i>
+              <div class="card-body">
+                <h3 class="card-title">musicalización</h3>
+                <p class="card-text">
+                  Creamos experiencias musicales personalizadas para cada ocasión
+                </p>
+                <ul>
+                  <li>Cumpleaños</li>
+                  <li>Empresas</li>
+                  <li>Emprendimientos</li>
+                  <li>Bodas</li>
+                  <li>Contenido para redes</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div class="card text-bg-dark mb-3" style="max-width: 18rem">
-            <i class="bi bi-camera"></i>
-            <div class="card-body">
-              <h3 class="card-title">Producción audiovisual</h3>
-              <p class="card-text">
-                Videos profesionales que cuentan historias y conectan con tu
-                audiencia
-              </p>
-              <ul>
-                <li>Reels</li>
-                <li>Short</li>
-                <li>TikTok</li>
-                <li>Videos promocionales</li>
-                <li>Edición profesional</li>
-              </ul>
+          <div class="col d-flex">
+            <div class="card text-bg-dark w-100">
+              <i class="bi bi-camera"></i>
+              <div class="card-body">
+                <h3 class="card-title">Producción audiovisual</h3>
+                <p class="card-text">
+                  Videos profesionales que cuentan historias y conectan con tu
+                  audiencia
+                </p>
+                <ul>
+                  <li>Reels</li>
+                  <li>Short</li>
+                  <li>TikTok</li>
+                  <li>Videos promocionales</li>
+                  <li>Edición profesional</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div class="card text-bg-dark mb-3" style="max-width: 18rem">
-            <i class="bi bi-pencil"></i>
-            <div class="card-body">
-              <h3 class="card-title">Diseño gráfico</h3>
-              <p class="card-text">
-                Diseños creativos que reflejan la identidad de tu marca
-              </p>
-              <ul>
-                <li>Logos</li>
-                <li>Flyer</li>
-                <li>Catálogos</li>
-                <li>Branding</li>
-                <li>Diseño para redes</li>
-              </ul>
+          <div class="col d-flex">
+            <div class="card text-bg-dark w-100">
+              <i class="bi bi-pencil"></i>
+              <div class="card-body">
+                <h3 class="card-title">Diseño gráfico</h3>
+                <p class="card-text">
+                  Diseños creativos que reflejan la identidad de tu marca
+                </p>
+                <ul>
+                  <li>Logos</li>
+                  <li>Flyer</li>
+                  <li>Catálogos</li>
+                  <li>Branding</li>
+                  <li>Diseño para redes</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div class="card text-bg-dark mb-3" style="max-width: 18rem">
-            <i class="bi bi-reception-4"></i>
-            <div class="card-body">
-              <h3 class="card-title">Marketing digital</h3>
-              <p class="card-text">
-                Estrategias digitales que impulsan tu marca y te hacen crecer
-              </p>
-              <ul>
-                <li>Gestión de redes</li>
-                <li>Estrategias de contenido</li>
-                <li>Campañas publicitarias</li>
-                <li>Posicionamiento digital</li>
-              </ul>
+          <div class="col d-flex">
+            <div class="card text-bg-dark w-100">
+              <i class="bi bi-reception-4"></i>
+              <div class="card-body">
+                <h3 class="card-title">Marketing digital</h3>
+                <p class="card-text">
+                  Estrategias digitales que impulsan tu marca y te hacen crecer
+                </p>
+                <ul>
+                  <li>Gestión de redes</li>
+                  <li>Estrategias de contenido</li>
+                  <li>Campañas publicitarias</li>
+                  <li>Posicionamiento digital</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div class="card text-bg-dark mb-3" style="max-width: 18rem">
-            <i class="bi bi-lightbulb"></i>
-            <div class="card-body">
-              <h3 class="card-title">Creación de contenido</h3>
-              <p class="card-text">
-                Contenido creativo y original para destacar en todas las
-                plataformas
-              </p>
-              <ul>
-                <li>Fotografia</li>
-                <li>Videos</li>
-                <li>Contenido para redes</li>
-                <li>Storytelling</li>
-              </ul>
+          <div class="col d-flex">
+            <div class="card text-bg-dark w-100">
+              <i class="bi bi-lightbulb"></i>
+              <div class="card-body">
+                <h3 class="card-title">Creación de contenido</h3>
+                <p class="card-text">
+                  Contenido creativo y original para destacar en todas las
+                  plataformas
+                </p>
+                <ul>
+                  <li>Fotografia</li>
+                  <li>Videos</li>
+                  <li>Contenido para redes</li>
+                  <li>Storytelling</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -241,7 +305,7 @@
     </div>
 
     <section class="portafolio-section">
-      <div class="container">
+      <div class="container-fluid px-3 px-lg-5">
         <div class="text-center mb-5">
           <span class="portafolio-label">Portafolio</span>
           <h1 class="portafolio-titulo">Nuestros Trabajos</h1>
@@ -319,30 +383,32 @@
     </section>
 
     <footer>
-      <div class="footer-texto">
-        <span class="footer-contacto-label">CONTACTO</span>
-        <h2 class="footer-titulo">HABLEMOS DE TU PROYECTO</h2>
-        <p class="footer-sub">
-          Estamos listos para ayudarte a impulsar tu marca.
-        </p>
-      </div>
+      <div class="container-fluid px-3 px-lg-5">
+        <div class="footer-texto">
+          <span class="footer-contacto-label">CONTACTO</span>
+          <h2 class="footer-titulo">HABLEMOS DE TU PROYECTO</h2>
+          <p class="footer-sub">
+            Estamos listos para ayudarte a impulsar tu marca.
+          </p>
+        </div>
 
-      <div class="contenedor-botones">
-        <button class="botones-footer">
-          <i class="fa-brands fa-whatsapp"></i> WHATSAPP
-        </button>
-        <button class="botones-footer">
-          <i class="fa-brands fa-instagram"></i> INSTAGRAM
-        </button>
-        <button
-          class="botones-footer"
-          onclick="window.location.href='mailto:correo@ejemplo.com'"
-        >
-          <i class="fa-solid fa-envelope"></i> CORREO
-        </button>
-        <button class="botones-footer">
-          <i class="fa-solid fa-location-dot"></i> CHILE
-        </button>
+        <div class="contenedor-botones">
+          <button class="botones-footer">
+            <i class="fa-brands fa-whatsapp"></i> WHATSAPP
+          </button>
+          <button class="botones-footer">
+            <i class="fa-brands fa-instagram"></i> INSTAGRAM
+          </button>
+          <button
+            class="botones-footer"
+            onclick="window.location.href='mailto:correo@ejemplo.com'"
+          >
+            <i class="fa-solid fa-envelope"></i> CORREO
+          </button>
+          <button class="botones-footer">
+            <i class="fa-solid fa-location-dot"></i> CHILE
+          </button>
+        </div>
       </div>
 
       <div class="footer-onda">
@@ -351,7 +417,9 @@
     </footer>
 
     <div class="footer-copyright">
-      © 2026 Impulso Producciones Oficial. Todos los derechos reservados.
+      <div class="container-fluid px-3 px-lg-5">
+        © 2026 Impulso Producciones Oficial. Todos los derechos reservados.
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
