@@ -1,3 +1,7 @@
+/* =========================================================
+   1. BASE Y TIPOGRAFÍA
+   ========================================================= */
+
 body {
     background-color: #000000;
     color: #FFFFFF;
@@ -8,16 +12,36 @@ h2, h3, p {
     color: white;
 }
 
+
+/* =========================================================
+   2. NAVBAR / MENÚ DE NAVEGACIÓN
+   ========================================================= */
+
 .imagen_logo {
     width: 225px;
     height: 85px;
 }
 
-.icono {
-    width: 15%;
+.navbar .icono {
     display: flex;
-    justify-content: center;
+    gap: 15px;
+    align-items: center;
 }
+
+.navbar .icono i {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar .icono i:hover {
+    color: #b8953f;
+}
+
+
+/* =========================================================
+   3. HERO SECTION (SECCIÓN PRINCIPAL)
+   ========================================================= */
 
 .hero-section {
     background:
@@ -156,6 +180,11 @@ h2, h3, p {
     font-size: 20px;
 }
 
+
+/* =========================================================
+   4. SECCIÓN NOSOTROS
+   ========================================================= */
+
 .seccion-nosotros {
     display: flex;
     min-height: 100vh;
@@ -219,67 +248,11 @@ h2, h3, p {
     object-position: center;
 }
 
-/* =====================
-   SECCIÓN PORTAFOLIO
-   ===================== */
 
-.portafolio-section {
-    background-color: #0d0d0d;
-    padding: 60px 0;
-}
+/* =========================================================
+   5. SECCIÓN SERVICIOS (¿QUÉ HACEMOS?)
+   ========================================================= */
 
-.portafolio-label {
-    color: #c9a84c;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.portafolio-titulo {
-    color: #c9a84c;
-    margin-bottom: 8px;
-}
-
-.title-line {
-    display: block;
-    width: 50px;
-    height: 2px;
-    background-color: #c9a84c;
-    margin: 0 auto 40px auto;
-}
-
-.portafolio-card {
-    position: relative;
-    overflow: hidden;
-}
-
-.portafolio-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    object-position: center 20%;
-    display: block;
-}
-
-.portafolio-card-label {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-    padding: 20px 12px 10px;
-}
-
-.portafolio-card-label h5 {
-    margin: 0;
-    color: #fff;
-}
-
-/* =====================
-   SECCIÓN SERVICIOS (CORREGIDA)
-   ===================== */
 .seccion3 {
     background-color: black;
     padding: 4rem 0;
@@ -362,9 +335,69 @@ h2, h3, p {
     padding-top: 1.5rem;
 }
 
-/* =====================
-   SECCIÓN FOOTER
-   ===================== */
+
+/* =========================================================
+   6. SECCIÓN PORTAFOLIO
+   ========================================================= */
+
+.portafolio-section {
+    background-color: #0d0d0d;
+    padding: 60px 0;
+}
+
+.portafolio-label {
+    color: #c9a84c;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.portafolio-titulo {
+    color: #c9a84c;
+    margin-bottom: 8px;
+}
+
+.title-line {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #c9a84c;
+    margin: 0 auto 40px auto;
+}
+
+.portafolio-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.portafolio-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+.portafolio-card-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 20px 12px 10px;
+}
+
+.portafolio-card-label h5 {
+    margin: 0;
+    color: #fff;
+}
+
+
+/* =========================================================
+   7. FOOTER / PIE DE PÁGINA
+   ========================================================= */
 
 footer {
     display: flex;
@@ -453,9 +486,10 @@ footer {
     border-top: 1px solid #111;
 }
 
-/* =====================
-   MEDIA QUERIES
-   ===================== */
+
+/* =========================================================
+   8. MEDIA QUERIES (RESPONSIVE)
+   ========================================================= */
 
 @media (max-width: 991px) {
     .seccion-nosotros {
@@ -491,6 +525,23 @@ footer {
 
     .footer-onda {
         margin-top: 1rem;
+    }
+
+    .navbar .icono {
+        display: none;
+    }
+
+    .navbar .navbar-collapse {
+        background-color: #000;
+        padding: 1rem 0;
+    }
+
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar .nav-item {
+        margin: 0.5rem 0;
     }
 }
 

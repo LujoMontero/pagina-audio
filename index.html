@@ -25,76 +25,24 @@
     />
 
     <title>Impulso Producciones</title>
-    <style>
-      .seccion3 .card {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-      }
-      .seccion3 .card-body {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-      }
-      .seccion3 .card-body ul {
-        margin-top: auto;
-        padding-left: 1.2rem;
-      }
-      .seccion3 .card-body ul li {
-        margin-bottom: 0.25rem;
-      }
-      .seccion3 .bi {
-        font-size: 2.5rem;
-        text-align: center;
-        display: block;
-        padding-top: 1.5rem;
-        padding-bottom: 0.5rem;
-      }
-      .seccion3 .card-title {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-      }
-      .seccion3 .card-text {
-        text-align: center;
-        font-size: 0.9rem;
-        margin-bottom: 1rem;
-      }
-      .seccion3_texto {
-        text-align: center;
-        margin-bottom: 2rem;
-      }
-      .seccion3_texto .Servicios3 {
-        color: #c9a227;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        font-size: 0.9rem;
-        margin-bottom: 0.5rem;
-      }
-      .seccion3_texto h2 {
-        font-size: 2.5rem;
-        font-weight: 700;
-      }
-    </style>
   <base target="_blank">
 </head>
 
   <body>
     <div class="navbar_proyecto">
       <nav
-        class="navbar navbar-expand border-bottom border-body"
+        class="navbar navbar-expand-lg navbar-dark border-bottom border-body"
         data-bs-theme="dark"
         style="background-color: #000"
       >
         <div class="container-fluid px-3 px-lg-5">
-          <div>
+          <a class="navbar-brand" href="#">
             <img
               class="imagen_logo"
               src="ASSETS/img/logoinicio.png"
               alt="Logo de la empresa"
             />
-          </div>
+          </a>
 
           <button
             class="navbar-toggler"
@@ -109,36 +57,34 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="mx-auto">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item mb-3">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="proyecto1/index.html"
-                    >Inicio</a
-                  >
-                </li>
-                <li class="nav-item me-3 ms-3">
-                  <a class="nav-link" href="Nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item me-3">
-                  <a class="nav-link" href="Mantenimiento.html">Servicios</a>
-                </li>
-                <li class="nav-item me-3">
-                  <a class="nav-link" href="Mantenimiento.html">Portafolio</a>
-                </li>
-                <li class="nav-item me-3">
-                  <a class="nav-link" href="Mantenimiento.html">Contacto</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="proyecto1/index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="Nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="Mantenimiento.html">Servicios</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="Mantenimiento.html">Portafolio</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link" href="Mantenimiento.html">Contacto</a>
+              </li>
+            </ul>
           </div>
 
-          <div class="icono">
-            <i class="fa-brands fa-instagram" style="font-size: 2rem"></i>
-            <i class="fa-brands fa-youtube" style="font-size: 2rem"></i>
-            <i class="fa-brands fa-whatsapp" style="font-size: 2rem"></i>
+          <div class="icono d-none d-lg-flex">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-whatsapp"></i>
           </div>
         </div>
       </nav>
