@@ -289,6 +289,41 @@ p {
 }
 
 /* =====================
+   que hacemos
+   ===================== */
+.seccion3{
+    background-color: black;
+    height: 100vh;
+    padding: 2%;
+    
+}
+.Servicios3{
+    font-size: 1.1rem;
+    font-weight: 700;
+        letter-spacing: 2px;
+        text-align: left;
+        text-transform: uppercase;
+    color: #b8953f;
+}
+.seccion3_texto{
+    
+    display: grid;
+    flex-direction: column;
+    justify-items: center;
+}
+.seccion3_card{
+    padding: 2%;
+}
+.card{
+    margin: 1%;
+}
+* i {
+    
+    align-self: center;
+    font-size: 2rem ; 
+    color: #b8953f;
+}
+/* =====================
    SECCIÓN FOOTER
    ===================== */
 
