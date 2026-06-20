@@ -1,0 +1,597 @@
+/* ========================================================
+   1. BASE Y TIPOGRAFÍA
+   ======================================================== */
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+h2, h3, p {
+    color: white;
+}
+
+
+/* =========================================================
+   2. NAVBAR / MENÚ DE NAVEGACIÓN
+   ========================================================= */
+
+.imagen_logo {
+    width: 225px;
+    height: 85px;
+}
+
+.navbar .icono {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar .icono i {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.navbar .icono i:hover {
+    color: #b8953f;
+}
+
+
+/* =========================================================
+   3. HERO SECTION (SECCIÓN PRINCIPAL)
+   ========================================================= */
+
+.hero-section {
+    background:
+        linear-gradient(to right, rgba(0, 0, 0, 0.92) 45%, rgba(0, 0, 0, 0.55) 100%),
+        url('/proyecto1/ASSETS/img/FondoArea2.jpeg') center / cover no-repeat;
+    min-height: 340px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.hero-section h1 {
+    color: white;
+    font-size: 72px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.hero-section h2 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 8px 0 0 0;
+    letter-spacing: 0.5px;
+}
+
+.hero-linea {
+    width: 48px;
+    height: 2px;
+    background-color: #b8953f;
+    margin: 14px 0;
+}
+
+.hero-section .col:first-child p {
+    color: #cccccc;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.hero-section .row {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.botones {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.btn-gold {
+    background-color: #b8953f;
+    color: #000000;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+.btn-gold:hover {
+    background-color: #a07c30;
+}
+
+.btn-whatsapp {
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 12px 24px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+}
+
+.btn-whatsapp i {
+    color: white;
+    font-size: 17px;
+}
+
+.btn-whatsapp:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.col-servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+}
+
+.col-servicios p {
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-align: left;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-transform: uppercase;
+}
+
+.col-servicios i {
+    color: #b8953f;
+    font-size: 18px;
+    width: 22px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.chevron-down {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   4. SECCIÓN NOSOTROS
+   ========================================================= */
+
+.seccion-nosotros {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sobre-nosotros-title {
+    color: #947a07;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+.hero-headline {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+    color: #FFFFFF;
+}
+
+.card-text {
+    color: #d1d1d1;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+#btn-conocer-mas {
+    border-color: #947a07;
+    color: #947a07;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+#btn-conocer-mas:hover {
+    background-color: #947a07;
+    border-color: #947a07;
+    color: #ffffff;
+}
+
+.col-image-full img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.img-hero {
+    width: 1200px;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================================================
+   5. SECCIÓN SERVICIOS (¿QUÉ HACEMOS?)
+   ========================================================= */
+
+.seccion3 {
+    background-color: black;
+    padding: 4rem 0;
+}
+
+.seccion3_texto {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.Servicios3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #b8953f;
+    margin-bottom: 0.5rem;
+}
+
+.seccion3_texto h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.seccion3 .row {
+    align-items: stretch;
+}
+
+.seccion3 .col {
+    display: flex;
+}
+
+.seccion3 .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #333;
+    background-color: #111;
+}
+
+.seccion3 .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.seccion3 .card-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.seccion3 .card-text {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    color: #ccc;
+}
+
+.seccion3 .card-body ul {
+    margin-top: auto;
+    padding-left: 1.2rem;
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+.seccion3 .card-body ul li {
+    margin-bottom: 0.25rem;
+}
+
+.seccion3 .bi {
+    font-size: 2.5rem;
+    color: #b8953f;
+    text-align: center;
+    display: block;
+    padding-top: 1.5rem;
+}
+
+
+/* =========================================================
+   6. SECCIÓN PORTAFOLIO
+   ========================================================= */
+
+.portafolio-section {
+    background-color: #0d0d0d;
+    padding: 60px 0;
+}
+
+.portafolio-label {
+    color: #c9a84c;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.portafolio-titulo {
+    color: #c9a84c;
+    margin-bottom: 8px;
+}
+
+.title-line {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #c9a84c;
+    margin: 0 auto 40px auto;
+}
+
+.portafolio-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.portafolio-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    object-position: center 20%;
+    display: block;
+}
+
+.portafolio-card-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 20px 12px 10px;
+}
+
+.portafolio-card-label h5 {
+    margin: 0;
+    color: #fff;
+}
+/* =========================================================
+   8. SECCIÓN CLIENTES
+   ========================================================= */
+
+.video-testimonio{
+    width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.modal-dialog{
+    max-width: 360px;
+}
+.video-testimonio{
+    width: 100%;
+    height: auto;
+}
+
+.modal-body{
+    text-align: center;
+}
+
+
+
+/* =========================================================
+   7. FOOTER / PIE DE PÁGINA
+   ========================================================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 18px 40px;
+    gap: 24px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-contacto-label {
+    color: olive;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.footer-titulo {
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+}
+
+.footer-sub {
+    color: #888;
+    font-size: 12px;
+    margin: 0;
+}
+
+.contenedor-botones {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botones-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: white;
+    background-color: #000;
+    padding: 10px 18px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.botones-footer:hover {
+    border-color: #b8953f;
+    color: #b8953f;
+}
+
+.botones-footer i {
+    font-size: 14px;
+}
+
+.footer-onda {
+    display: flex;
+    align-items: center;
+}
+
+.footer-onda img {
+    width: 120px;
+    opacity: 0.85;
+    filter: brightness(1.2);
+}
+
+.footer-copyright {
+    background-color: #000;
+    text-align: center;
+    color: #555;
+    font-size: 11px;
+    padding: 10px 0;
+    border-top: 1px solid #111;
+}
+
+.link {
+    color: #b8953f;
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+
+
+/* =========================================================
+   8. MEDIA QUERIES (RESPONSIVE)
+   ========================================================= */
+
+@media (max-width: 991px) {
+    .seccion-nosotros {
+        flex-direction: column;
+        padding: 5rem 1rem;
+    }
+
+    .hero-headline {
+        font-size: 2.2rem;
+    }
+
+    .col-image-full {
+        position: static;
+        width: 100%;
+        height: 300px;
+        margin-top: 3rem;
+    }
+
+    .col-servicios {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+
+    .hero-section h1 {
+        font-size: 48px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .footer-onda {
+        margin-top: 1rem;
+    }
+
+    .navbar .icono {
+        display: none;
+    }
+
+    .navbar .navbar-collapse {
+        background-color: #000;
+        padding: 1rem 0;
+    }
+
+    .navbar .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar .nav-item {
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .seccion3_texto h2 {
+        font-size: 1.8rem;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-gold, .btn-whatsapp {
+        width: 100%;
+        justify-content: center;
+    }
+}
