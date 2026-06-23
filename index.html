@@ -333,15 +333,15 @@
 
         <div class="text-center mb-5">
 
-            <p class="text-warning text-uppercase">
-                Testimonios
-            </p>
+    <p class="display-5 text-warning text-uppercase fw-bold">
+    Testimonios
+</p>
 
-            <h2 class="fw-bold">
-                LO QUE DICEN NUESTROS CLIENTES
-            </h2>
+    <h2 class="fw-bold">
+        LO QUE DICEN NUESTROS CLIENTES
+    </h2>
 
-        </div>
+</div>
 
         <div class="row">
 
@@ -472,7 +472,7 @@
 
 <div class="modal fade" id="videoRodolfo" tabindex="-1">
 
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl modal-testimonio">
 
         <div class="modal-content bg-dark text-white">
 
@@ -491,12 +491,15 @@
 
             <div class="modal-body">
 
-                <video width="100%" controls>
-
-                    <source src="ASSETS/VIDEOS/RodolfoGazmuri.mp4"
-                            type="video/mp4">
-
-                </video>
+                <div class="ratio ratio-16x9">
+    <iframe
+    id="iframeRodolfo"
+    src="https://www.youtube.com/embed/w3qRxkhy7os"
+    title="Testimonio de Rodolfo Gazmuri"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+</iframe>
+</div>
 
             </div>
 
@@ -510,10 +513,11 @@
 <!-- MODAL DON CARTER -->
 <!-- ========================= -->
 
+
 <div class="modal fade" id="videoDonCarter" tabindex="-1">
 
-    <div class="modal-dialog modal-dialog-centered">
-
+<div class="modal-dialog modal-xl modal-testimonio">
+    
         <div class="modal-content bg-dark text-white">
 
             <div class="modal-header">
@@ -531,13 +535,16 @@
 
             <div class="modal-body text-center">
 
-                <video class="video-testimonio" controls autoplay muted>
-
-                    <source src="VIDEOS/DonCarter.mp4"
-                            type="video/mp4">
-
-
-                </video>
+                <div class="ratio ratio-16x9">
+    <iframe
+    id="iframeDonCarter"
+    src="https://www.youtube.com/embed/DsNH_tFHdEA"
+    title="Testimonio Don Carter"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+</iframe>
+</div>
+        
 
             </div>
 
@@ -547,14 +554,13 @@
 
 </div>
 
-
 <!-- ========================= -->
 <!-- MODAL TÍO OUTLET -->
 <!-- ========================= -->
 
 <div class="modal fade" id="videoTioOutlet" tabindex="-1">
 
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl modal-testimonio">
 
         <div class="modal-content bg-dark text-white">
 
@@ -573,20 +579,77 @@
 
             <div class="modal-body">
 
-                <video width="100%" controls>
-
-                    <source src="ASSETS/VIDEOS/TioOutlet.mp4"
-                            type="video/mp4">
-
-                </video>
-
-            </div>
-
-        </div>
-
+    <div class="ratio ratio-16x9">
+        <iframe
+            id="iframeTioOutlet"
+            src="https://www.youtube.com/embed/_MaCcWAyc5s"
+            title="Testimonio Tío Outlet"
+            allow="autoplay; encrypted-media"
+            allowfullscreen>
+        </iframe>
     </div>
 
 </div>
+
+</div>
+
+
+    
+    <aside class="barra-lateral">
+      <h2>Lateral</h2>
+    </aside>
+    <footer>
+      <p>&copy;</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/actividades/javascript/script.js"></script>
+
+<script>
+
+// RODOLFO
+const modalRodolfo = document.getElementById('videoRodolfo');
+const iframeRodolfo = document.getElementById('iframeRodolfo');
+
+modalRodolfo.addEventListener('shown.bs.modal', () => {
+    iframeRodolfo.src =
+        "https://www.youtube.com/embed/w3qRxkhy7os?autoplay=1";
+});
+
+modalRodolfo.addEventListener('hidden.bs.modal', () => {
+    iframeRodolfo.src =
+        "https://www.youtube.com/embed/w3qRxkhy7os";
+});
+
+
+// DON CARTER
+const modalDonCarter = document.getElementById('videoDonCarter');
+const iframeDonCarter = document.getElementById('iframeDonCarter');
+
+modalDonCarter.addEventListener('shown.bs.modal', () => {
+    iframeDonCarter.src =
+        "https://www.youtube.com/embed/DsNH_tFHdEA?autoplay=1";
+});
+
+modalDonCarter.addEventListener('hidden.bs.modal', () => {
+    iframeDonCarter.src =
+        "https://www.youtube.com/embed/DsNH_tFHdEA";
+});
+
+// TÍO OUTLET
+const modalTioOutlet = document.getElementById('videoTioOutlet');
+const iframeTioOutlet = document.getElementById('iframeTioOutlet');
+
+modalTioOutlet.addEventListener('shown.bs.modal', () => {
+    iframeTioOutlet.src =
+        "https://www.youtube.com/embed/_MaCcWAyc5s?autoplay=1";
+});
+
+modalTioOutlet.addEventListener('hidden.bs.modal', () => {
+    iframeTioOutlet.src =
+        "https://www.youtube.com/embed/_MaCcWAyc5s";
+});
+
+</script>
 
 
     <footer>

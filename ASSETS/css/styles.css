@@ -595,3 +595,44 @@ footer {
         justify-content: center;
     }
 }
+/* ========================= */
+/* TESTIMONIOS */
+/* ========================= */
+
+.video-testimonio{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.modal-testimonio{
+    max-width: 800px !important;
+}
+
+.modal-body{
+    text-align: center;
+}
+
+.modal-backdrop.show {
+    background-color: #000;
+    opacity: 0.9 !important;
+}
+
+.titulo-testimonios {
+    font-size: 2.5rem !important;
+    font-weight: 700;
+}
+
+.video-short {
+    width: 100%;
+    max-width: 900px;
+    height: 800px;
+    border: none;
+    border-radius: 10px;
+}
+#testimonios {
+    background-color: #000;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
