@@ -321,9 +321,7 @@ body {
     border-color: #b8953f;
     color: #ffffff !important;
 }
-/* =========================================================
-   7. FOOTER / PIE DE PÁGINA
-   ========================================================= */
+
 
 footer {
     display: flex;
@@ -419,10 +417,6 @@ footer {
     cursor: default;
 }
 
-
-/* =========================================================
-   8. MEDIA QUERIES (RESPONSIVE)
-   ========================================================= */
 
 @media (max-width: 991px) {
     .seccion-nosotros {
